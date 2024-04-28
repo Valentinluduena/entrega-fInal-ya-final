@@ -1,0 +1,618 @@
+/*Base*/
+* {
+  box-sizing: border-box; }
+
+/*Utilities*/
+/*Variables*/
+/*Layout*/
+.headerinicio {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  margin: 0px;
+  padding: 10px;
+  text-align: center; }
+  .headerinicio h1 {
+    display: inline-block;
+    height: 80px;
+    margin-left: 30px;
+    width: 70%; }
+    .headerinicio h1 a {
+      display: inline-block;
+      height: 70px;
+      width: 200px;
+      text-decoration: none;
+      text-align: center;
+      font-family: "Six Caps";
+      font-weight: 400;
+      font-style: normal;
+      color: white;
+      font-size: 60px;
+      margin-top: 0px;
+      padding-top: 1rem;
+      padding: 0px 8px;
+      padding-right: 60px; }
+  .headerinicio nav ul a {
+    display: inline;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal; }
+  .headerinicio .container {
+    float: left;
+    width: 5%;
+    margin: auto; }
+    .headerinicio .container .btn-menu {
+      float: left;
+      width: 5%;
+      color: white; }
+
+nav ul a:hover {
+  color: #BC264B; }
+
+/*Menu hamburguesa*/
+.headerpages {
+  background-color: black;
+  margin: 0px;
+  padding: 10px;
+  text-align: center; }
+  .headerpages h1 a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Six Caps";
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 60px;
+    margin-top: 0px;
+    padding-top: 1rem; }
+  .headerpages nav ul a {
+    display: inline;
+    text-align: start;
+    padding: 3rem;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal; }
+  .headerpages .container {
+    float: left;
+    width: 5%;
+    margin: auto; }
+    .headerpages .container .btn-menu {
+      float: left;
+      width: 5%;
+      color: white; }
+
+nav ul a:hover {
+  color: #BC264B; }
+
+.footerinicio {
+  background-color: black;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+  border: 0px;
+  padding: 15px; }
+  .footerinicio .footerconteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    color: white; }
+
+i:hover {
+  color: #BC264B; }
+
+.footerpages {
+  background-color: black;
+  padding: 2rem;
+  flex-wrap: nowrap; }
+  .footerpages .footerconteiner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    color: white; }
+
+i {
+  color: white; }
+
+i:hover {
+  color: #BC264B; }
+
+.maininicio {
+  position: relative; }
+
+#btn-menu {
+  display: none;
+  float: left; }
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden; }
+  .container-menu .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%); }
+    .container-menu .cont-menu nav {
+      transform: translateY(15%); }
+      .container-menu .cont-menu nav a {
+        border-top: 1px solid white;
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        transition: all 400ms ease; }
+    .container-menu .cont-menu label {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px; }
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible; }
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%); }
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f; }
+
+.mainpages {
+  position: relative;
+  padding: 4rem;
+  border: 0px;
+  margin: 0px; }
+
+.container-menu {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden; }
+  .container-menu .cont-menu {
+    width: 100%;
+    max-width: 250px;
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%); }
+    .container-menu .cont-menu nav {
+      transform: translateY(15%); }
+      .container-menu .cont-menu nav a {
+        border-top: 1px solid white;
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: #c7c7c7;
+        transition: all 400ms ease; }
+    .container-menu .cont-menu label {
+      position: absolute;
+      right: 5px;
+      top: 10px;
+      color: white;
+      cursor: pointer;
+      font-size: 20px; }
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible; }
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%); }
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f; }
+
+.body1 {
+  background-image: url(../../assets/img/Desktop/Otras-img/img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0px;
+  padding: 0px; }
+
+.body-pages {
+  margin: 0px;
+  padding: 0px; }
+
+@media (max-width: 2560px) {
+  .img-mobile-teclado {
+    display: none; }
+  nav ul a {
+    background-size: contain; }
+  .container {
+    display: none; }
+  .nav-menu {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .headerinicio {
+    padding: 5px; }
+    .headerinicio h1 a {
+      font-size: 60px; }
+    .headerinicio nav ul a {
+      padding: 30px;
+      font-size: 11px; }
+    .headerinicio .footerinicio {
+      font-size: 13px; }
+  .headerpages nav ul a {
+    font-size: 11px;
+    padding: 20px; } }
+
+@media (max-width: 425px) {
+  .headerinicio {
+    padding: 30px; }
+    .headerinicio .qwertycustom1 {
+      font-size: 10px; }
+      .headerinicio .qwertycustom1 a {
+        font-size: 40px; }
+    .headerinicio nav {
+      display: none; }
+  .container {
+    display: contents; }
+    .container .btn-menu {
+      padding-top: 20px; }
+  .nav-menu {
+    display: contents; }
+  .footerinicio .footerconteiner {
+    font-size: 10px; }
+  .headerpages {
+    margin: 0px;
+    padding: 10px;
+    text-align: center; }
+    .headerpages h1 {
+      display: inline-block;
+      height: 80px;
+      margin-left: 30px;
+      width: 70%; }
+      .headerpages h1 a {
+        display: inline-block;
+        font-size: 40px;
+        padding: 0px 8px;
+        padding-right: 60px; }
+    .headerpages nav {
+      display: none; }
+    .headerpages .btn-menu {
+      padding-left: 10px;
+      padding-top: 35px; }
+  .footerpages .footerconteiner {
+    font-size: 10px; }
+  .card {
+    display: none; }
+  .img-mobile-teclado {
+    display: contents; }
+  .cardm .card-imagem {
+    height: 210px;
+    width: 210px;
+    margin-bottom: 15px;
+    background-size: cover;
+    margin: 20px 20px; }
+  .cardm .product-names {
+    font-size: 14px; }
+  .cardm .carrito {
+    font-size: 8px;
+    padding: 0.5px 0.5px;
+    margin: 8px 8px; } }
+
+@media (max-width: 375px) {
+  .headerinicio h1 a {
+    font-size: 35px; }
+  .headerinicio nav ul a {
+    font-size: 10px;
+    padding: 12px; }
+  .footerinicio div .divfooter {
+    font-size: 8px; }
+  .headerpages nav ul a {
+    font-size: 10px;
+    padding: 12px; }
+  .footerpages .footerconteiner {
+    font-size: 8px; }
+  .card .card-image {
+    width: 310px;
+    height: 385px;
+    background-position: center; }
+  .card h1 {
+    font-size: 17px; }
+  .card p {
+    font-size: 10px; } }
+
+@media (max-width: 320px) {
+  .headerinicio h1 a {
+    font-size: 40px; }
+  .headerpages h1 a {
+    font-size: 40px; }
+  .footerinicio {
+    font-size: 7px; }
+  .footerpages {
+    font-size: 7px; }
+  .card {
+    height: 150px;
+    width: 100px; }
+    .card .card-image {
+      height: 100px;
+      width: 270px;
+      background-size: contain; }
+    .card .product-names {
+      font-size: 12px; }
+    .card .carrito {
+      font-size: 7px; } }
+
+/*Components*/
+.teclado1m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado1m.jpg); }
+
+.teclado2m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado2m.jpg); }
+
+.teclado3m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado3m.jpg); }
+
+.teclado4m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado4m.jpg); }
+
+.teclado5m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado5m.jpg); }
+
+.teclado6m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado6m.jpg); }
+
+.teclado7m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado7m.jpg); }
+
+.teclado8m {
+  background-image: url(../../assets/img/Mobile/TecladoMb/Teclado8m.jpg); }
+
+.keycap1m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap1.jpg); }
+
+.keycap2m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap2.jpg); }
+
+.keycap3m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap3.jpg); }
+
+.keycap4m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap4.jpg); }
+
+.keycap5m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap5.jpg); }
+
+.keycap6m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap6.jpg); }
+
+.keycap7m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap7.jpg); }
+
+.keycap8m {
+  background-image: url(../../assets/img/Mobile/KeycapsM/Keycap8.jpg); }
+
+.plates1m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate1.jpg); }
+
+.plates2m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate2.jpg); }
+
+.plates3m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate3.jpg); }
+
+.plates4m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate4.jpg); }
+
+.plates5m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate5.jpg); }
+
+.plates6m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate6.jpg); }
+
+.plates7m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate7.jpg); }
+
+.plates8m {
+  background-image: url(../../assets/img/Mobile/PlatesM/Plate8.jpg); }
+
+.accesorios1m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc1.jpg); }
+
+.accesorios2m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc2.jpg); }
+
+.accesorios3m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc3.jpg); }
+
+.accesorios4m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc4.jpg); }
+
+.accesorios5m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc5.jpg); }
+
+.accesorios6m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc6.jpg); }
+
+.accesorios7m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc7.jpg); }
+
+.accesorios8m {
+  background-image: url(../../assets/img/Mobile/AccesoriosM/Acc8.jpg); }
+
+.container-cards {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .container-cards .card {
+    background-color: #E2E2E2;
+    width: 500px;
+    height: 600px;
+    margin: 10px; }
+    .container-cards .card .card-image {
+      height: 430px;
+      margin-bottom: 15px;
+      background-size: cover;
+      margin: 20px 20px; }
+    .container-cards .card .product-names {
+      text-decoration: none;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+      font-weight: 500; }
+    .container-cards .card .carrito {
+      background-color: #BC264B;
+      color: white;
+      text-align: center;
+      padding: 2px 2px;
+      margin: 20px 70px; }
+
+.cardm {
+  background-color: #E2E2E2;
+  width: 300px;
+  height: 400px;
+  margin: 10px; }
+  .cardm .card-imagem {
+    height: 210px;
+    width: 240px;
+    margin-bottom: 15px;
+    background-size: cover;
+    margin: 20px 20px; }
+  .cardm .product-names {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 500; }
+  .cardm .carrito {
+    background-color: #BC264B;
+    color: white;
+    text-align: center;
+    padding: 2px 2px;
+    margin: 20px 70px; }
+
+.teclado1 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado1.jpg); }
+
+.teclado2 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado2.jpg); }
+
+.teclado3 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado3.jpg); }
+
+.teclado4 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado4.jpg); }
+
+.teclado5 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado5.jpg); }
+
+.teclado6 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado6.jpg); }
+
+.teclado7 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado7.jpg); }
+
+.teclado8 {
+  background-image: url(../../assets/img/Desktop/Teclado/Teclado8.jpg); }
+
+.keycap1 {
+  background-image: url(../../assets/img/Desktop/Keycaps/Kitty-Paw-Aluminium-Alloy-Artisan-Keycap-5.jpg); }
+
+.keycap2 {
+  background-image: url(../../assets/img/Desktop/Keycaps/UFO-Aluminium-Alloy-Artisan-Keycap.jpg); }
+
+.keycap3 {
+  background-image: url(../../assets/img/Desktop/Keycaps/Hammer-Aluminum-Alloy-Artisan-Keycap.jpg); }
+
+.keycap4 {
+  background-image: url(../../assets/img/Desktop/Keycaps/Keychron-Dye-sub-pbt-keycaps-forest-1.jpg); }
+
+.keycap5 {
+  background-image: url(../../assets/img/Desktop/Keycaps/keychron_k8_oem_retro_keycap_set.jpg); }
+
+.keycap6 {
+  background-image: url(../../assets/img/Desktop/Keycaps/it-iso-oem-pbt-keycap-set-blue.jpg); }
+
+.keycap7 {
+  background-image: url(../../assets/img/Desktop/Keycaps/Keychron-q1-q2-k2-oem-dye-sub-pbt-keycap-set-orange.jpg); }
+
+.keycap8 {
+  background-image: url(../../assets/img/Desktop/Keycaps/iso-it-q1-k2-oem-dye-sub-pbt-keycap-set-it.jpg); }
+
+.plates1 {
+  background-image: url(../../assets/img/Desktop/Plates/Keychron-Q0-Keyboard-Aluminum-Plate.jpg); }
+
+.plates2 {
+  background-image: url(../../assets/img/Desktop/Plates/Keychron-Q0-Keyboard-Brass-Plate.jpg); }
+
+.plates3 {
+  background-image: url(../assets/img/Desktop/Plates/Keychron-V10-Keyboard-ANSI-Layout-Aluminum-Plate.jpg); }
+
+.plates4 {
+  background-image: url(../assets/img/Desktop/Plates/Keychron-V10-Keyboard-ANSI-Layout-Brass-Plate.jpg); }
+
+.plates5 {
+  background-image: url(../assets/img/Desktop/Plates/Keychron-V3-ANSI-Brass-Plate.jpg); }
+
+.plates6 {
+  background-image: url(../assets/img/Desktop/Plates/Keychron-V3-ANSI-PC-Plate.jpg); }
+
+.plates7 {
+  background-image: url(../assets/img/Desktop/Plates/keychron-q2-custom-keyboard-aluminum-plate-ansi.jpg); }
+
+.plates8 {
+  background-image: url(../assets/img/Desktop/Plates/keychron-q2-custom-mechanical-keyboard-ansi-brass-plate.jpg); }
+
+.accesorios1 {
+  background-image: url(../assets/img/Desktop/Accesorios/gateron-switch-puller-package.jpg); }
+
+.accesorios2 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-Aluminum-Knob.jpg); }
+
+.accesorios3 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-K7-pouch-black2.jpg); }
+
+.accesorios4 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-Premium-Coiled-Cable-Aviator-Type-C-Cable-Black-Angled.jpg); }
+
+.accesorios5 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-Klube-1.jpg); }
+
+.accesorios6 {
+  background-image: url(../assets/img/Desktop/Accesorios/Gateron-Switch-Puller-Red.jpg); }
+
+.accesorios7 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-USB-Bluetooth-Adapter-for-Windows-11-10-8-PC.jpg); }
+
+.accesorios8 {
+  background-image: url(../assets/img/Desktop/Accesorios/Keychron-Gold-Plated-PCB-Mounted-Screw-In-Stabilizer-Set_1.jpg); }

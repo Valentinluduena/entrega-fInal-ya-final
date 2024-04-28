@@ -1,0 +1,53 @@
+.headerpages{
+    background-color: $background-color;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    h1{
+        a{
+            text-decoration: none;
+            text-align: center;
+            font-family: "Six Caps";
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 60px;
+            margin-top: 0px;
+            padding-top: 1rem;
+        }
+    }
+    nav{
+        ul{
+            a{
+                display: inline;
+                text-align: start;
+                padding: 3rem;
+                padding-top: 0px;
+                margin-top: 0px;
+                color: white;
+                text-decoration:none;
+                font-family: "Roboto", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+        }
+    }
+    .container{
+        float: left;
+        width: 5%;
+        margin: auto;
+        .btn-menu{
+            float: left;
+            width: 5%;
+            color: white;
+        }
+    }
+}
+
+nav{
+    ul{
+        a:hover{
+            color: #BC264B;
+        }
+    }
+}

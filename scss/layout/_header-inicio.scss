@@ -1,0 +1,74 @@
+.headerinicio{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    h1{
+        display: inline-block;
+        height: 80px;
+        margin-left: 30px;
+        width: 70%;
+        a{
+            display: inline-block;
+            height: 70px;
+            width: 200px;
+            text-decoration: none;
+            text-align: center;
+            font-family: "Six Caps";
+            font-weight: 400;
+            font-style: normal;
+            color: $color-letras;
+            font-size: 60px;
+            margin-top: 0px;
+            padding-top: 1rem;
+            padding: 0px 8px;
+            padding-right:60px;
+        }
+    }
+    nav{
+        ul{
+            a{
+                display: inline;
+                text-align: center;
+                padding: 3rem;
+                margin-top: 0px;
+                color: $color-letras;
+                text-decoration:none;
+                font-family: "Roboto", sans-serif;
+                font-weight: 100;
+                font-style: normal;
+            }
+        }
+    }
+    .container{
+        float: left;
+        width: 5%;
+        margin: auto;
+        .btn-menu{
+            float: left;
+            width: 5%;
+            color: white;
+        }
+    }
+}
+
+nav{
+    ul{
+        a:hover{
+            color: #BC264B;
+        }
+    }
+}
+
+/*Menu hamburguesa*/
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.footerinicio{
+    background-color: black;
+    background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 15px;
+    .footerconteiner{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 0.5rem;
+        color: white;
+    }
+}
+
+i:hover{
+    color: #BC264B;
+}
